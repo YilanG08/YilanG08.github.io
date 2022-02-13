@@ -11,7 +11,7 @@ This report aims to document scientific investigations we have done on EEG class
 
 ### Data
 
-### EDA
+### Exploratory Data Analysis
 
 ### Feature Extraction
 
