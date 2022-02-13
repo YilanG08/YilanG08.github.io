@@ -11,6 +11,17 @@ This report aims to document scientific investigations we have done on EEG class
 
 ### Data
 
+Because the SHHS consists of two visits, and the number of participants in the second visit is clearly smaller than that in the first visit, to make sure we have a complete record of both visit polysomnography data, we decided to start EDA on the second visit participants. 
+
+All participants data in visit 2 are saved in this dataframe:
+![visit2](https://github.com/YilanG08/sleepstage/blob/main/images/visit2.png)
+
+![numeric](https://github.com/YilanG08/sleepstage/blob/main/images/numeric.png)
+
+To accord with the epoch period in our later model planning, EEG, ECG, and EOG data are analyzed and visualized in 30-sec periods (One period EDA is shown in the Result section). We also plot an overnight spectrogram of EEG, which demonstrates the relationship between time and Frequency.
+
+
+
 ### Exploratory Data Analysis
 
 ### Feature Extraction
@@ -21,25 +32,8 @@ This report aims to document scientific investigations we have done on EEG class
 
 ### Reference
 
-```markdown
-Syntax highlighted code block
+Vallat, Raphael, and Matthew P. Walker. “A Universal, Open-Source, High-Performance Tool for Automated Sleep Staging.” BioRxiv, Cold Spring Harbor Laboratory, 1 Jan. 2021, https://www.biorxiv.org/content/10.1101/2021.05.28.446165v1.full.
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 ### Jekyll Themes
 
