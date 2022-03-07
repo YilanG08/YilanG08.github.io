@@ -21,12 +21,12 @@ Here is a snippet of a single participant’s signal recordings:
 ### Feature Extract EEG, EMG, EOG
 In order to extract features from EEG, EMG, and EOG signals, we followed the preprocessing and feature extraction process found in the [Yasa Classifier](https://github.com/raphaelvallat/yasa_classifier). 
 
-To read more about the Yasa Classifier, click [here](yasa_classifier.md)
+For a more in-depth explanation about the Yasa Classifier, click [here](yasa_classifier.md).
 
 ### Feature Extract ECG
 In order to extract features from ECG signals, we followed the preprocessing and feature extraction process found in [SleepECG](https://github.com/cbrnr/sleepecg). 
 
-To read more about SleepECG, click [here](sleep_ecg.md)
+For a more in-depth explanation about SleepECG, click [here](sleep_ecg.md).
 
 ### LGBM Classifier
 
