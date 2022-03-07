@@ -10,22 +10,16 @@ Our goal is to further explore the relationship between sleep stages and sleep a
 
 
 
-### Data
+### Our Data
 
-Because the SHHS consists of two visits, and the number of participants in the second visit is clearly smaller than that in the first visit, to make sure we have a complete record of both visit polysomnography data, we decided to start EDA on the second visit participants. 
+The data we have chosen to work with comes from the National Sleep Research Resource (NSRR). Specifically, we used the Sleep Heart Health Study (SHHS) which consists of two visits and the respective overnight [polysomnography](https://www.mayoclinic.org/tests-procedures/polysomnography/about/pac-20394877#:~:text=Polysomnography%2C%20also%20called%20a%20sleep,leg%20movements%20during%20the%20study.) recordings. Since the second visit has less participants and was done more recently, to make sure we had a more reliable and complete dataset we continued with the second visit (SHHS 2). This visit consists of 2,651 subjects and their respective 9 hour recordings of EEG, EOG, EMG, and ECG signals in 30 second periods. 
 
-All participants data in visit 2 are saved in this dataframe:
+To learn more about the full dataset, check out this [link] (https://sleepdata.org/datasets/shhs/pages/04-dataset-introduction.md)
+
+Here is a snippet of a single participant’s signal recordings:
 ![visit2](images/visit2.png)
 
-![numeric](images/numeric.png)
-
-To accord with the epoch period in our later model planning, EEG, ECG, and EOG data are analyzed and visualized in 30-sec periods (One period EDA is shown in the Result section). We also plot an overnight spectrogram of EEG, which demonstrates the relationship between time and Frequency.
-
-
-
-### Exploratory Data Analysis
-
-### Feature Extraction
+### Our Methods
 
 ### Models and Performance
 
