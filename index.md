@@ -20,8 +20,11 @@ Here is a snippet of a single participant’s signal recordings:
 ![visit2](images/visit2.png)
 
 ## Our Methods
-# Feature Extract 
-### Feature Extract
+### Feature Extract EEG, EMG, EOG
+
+### Feature Extract ECG
+
+### LGBM Classifier
 
 ## Models and Performance
 
