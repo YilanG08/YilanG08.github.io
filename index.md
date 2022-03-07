@@ -24,7 +24,8 @@ In order to extract features from EEG, EMG, EOG signals and demographics, we fol
 ### Feature Extract ECG
 In order to extract features from ECG signals, we followed the preprocessing and feature extraction process found in [SleepECG](https://github.com/cbrnr/sleepecg). For a more in-depth explanation about SleepECG, check out this [page](sleep_ecg.md).
 
-### LGBM Classifier
+### LightGBM Classifier
+We then passed all of our extracted features into a Light Gradient Boosted Machine to classify each epoch as one of the following stages: W (wake), R (REM), N1, N2, N3. To learn more about the LGBM algorithm, see our [LightGBM Explained](lgbm_explained.md) page
 
 ## Models and Performance
 
