@@ -1,44 +1,43 @@
-### Introduction
+## Introduction
 
 The project code can be found [here](https://github.com/chinkevin/DSC180_sleep_apnea).
 
-Obstructive sleep apnea (OSA), the more common form of sleep apnea, is a sleeping disorder where breathing stops and starts intermittently. OSA happens when muscles in the throat get relaxed, narrowing the airway and hampering breathing for 10 seconds or longer, causing blood oxygen concentration to decrease and a buildup of carbon dioxide. Such sudden drops in oxygen levels cause sudden increases in heart rate and blood pressure, resulting in repeated, transient strains on the cardiovascular system. OSA increases the risk of stroke and the risk of irregular heart rhythms or arrhythmias; both stroke and arrhythmias have the potential to cause sudden death. 
+In this project, we aim to explore sleep stage classification for individuals specifically with [sleep apnea](https://www.mayoclinic.org/diseases-conditions/sleep-apnea/symptoms-causes/syc-20377631). Current sleep stage scoring is done by hand which is somewhat subjective so human scorers don’t agree a lot of the time. Moreover, current automated sleep stage scoring models don't generalize well to patients with sleep apnea. 
 
-Sleeping is not uniform and consists of four stages: N1, N2, N3, and REM sleep. The analysis of sleep stages is essential for understanding and diagnosing sleep-related diseases, such as insomnia, narcolepsy, and sleep apnea.; however, there is not enough research on sleep stages and sleep stage classification for sleep apnea. The goal of our project is to identify and classify the sleep stage for people with sleep apnea and understand how it differs from the normal sleep stage.
+This work is important because sleep apnea can cause serious health issues for patients. It increases the risk of stroke, breathing problems, obesity, heart failure, and even sudden death. So the analysis of sleep data is essential for understanding and diagnosing sleep-related diseases in order to prevent life-changing health problems.
 
-This report aims to document scientific investigations we have done on EEG classification and exploratory data analysis (EDA) performed on sleep polysomnography data provided by the Sleep Heart Health Study PSG Database under the National Heart Lung & Blood Institute. The methods we have examined and plan to build our model on are YASA classifier and LGBM classifier models. The result section contains the EDA of some essential exploration of the dataset to understand its characteristics and patterns, cleaning the missing values and irregularities such as outliers to improve our results, visualizations representing the data, and some analysis.
+Our goal is to further explore the relationship between sleep stages and sleep apnea by building a sleep stage classifier that specifically includes ECG signals. We suspect that including ECG signals will improve the current models’ performance because it can identify obstructive sleep events, such as waking during sleep cycle, which individuals with sleep apnea often encounter.
 
+## Our Data
 
-### Data
+The data we have chosen to work with comes from the National Sleep Research Resource (NSRR). Specifically, we used the Sleep Heart Health Study (SHHS) which consists of two visits and the respective overnight [polysomnography](https://www.mayoclinic.org/tests-procedures/polysomnography/about/pac-20394877#:~:text=Polysomnography%2C%20also%20called%20a%20sleep,leg%20movements%20during%20the%20study) recordings. Since the second visit has less participants and was done more recently, to make sure we had a more reliable and complete dataset we continued with the second visit (SHHS 2). This visit consists of 2,651 subjects and their respective 9 hour recordings of EEG, EOG, EMG, and ECG signals in 30 second periods. 
 
-Because the SHHS consists of two visits, and the number of participants in the second visit is clearly smaller than that in the first visit, to make sure we have a complete record of both visit polysomnography data, we decided to start EDA on the second visit participants. 
+To learn more about the full dataset, check out this [link](https://sleepdata.org/datasets/shhs/pages/04-dataset-introduction.md).
 
-All participants data in visit 2 are saved in this dataframe:
-![visit2](images/visit2.png)
+Here is a snippet of a single participant’s signal recordings:
+![visit2](images/data_snip.PNG)
 
-![numeric](images/numeric.png)
+## Our Methods
+### Feature Extract EEG, EMG, EOG and Demographics
+In order to extract features from EEG, EMG, EOG signals and demographics, we followed the preprocessing and feature extraction process found in the [Yasa Classifier](https://github.com/raphaelvallat/yasa_classifier). For a more in-depth explanation about the Yasa Classifier, [here](https://elifesciences.org/articles/70092) is a great article that thoroughly explains the software along with the testing, data, performance, advantages, limitations, and scientific methods.
 
-To accord with the epoch period in our later model planning, EEG, ECG, and EOG data are analyzed and visualized in 30-sec periods (One period EDA is shown in the Result section). We also plot an overnight spectrogram of EEG, which demonstrates the relationship between time and Frequency.
+### Feature Extract ECG
+In order to extract features from ECG signals, we followed the preprocessing and feature extraction process found in [SleepECG](https://github.com/cbrnr/sleepecg). For a more in-depth explanation about SleepECG, check out this [page](sleep_ecg.md).
 
+### LightGBM Classifier
+We then passed all of our extracted features into a Light Gradient Boosted Machine to classify each epoch as one of the following stages: W (wake), R (REM), N1, N2, N3. To learn more about the LGBM algorithm, see our [LightGBM Explained](lgbm_explained.md) page
 
+## Models and Performance
 
-### Exploratory Data Analysis
+## Results and Conclusion
 
-### Feature Extraction
+## Reference
 
-### Models and Performance
-
-### Result
-
-### Reference
+1. https://www.mayoclinic.org/diseases-conditions/sleep-apnea/symptoms-causes/syc-20377631
+2. https://www.mayoclinic.org/tests-procedures/polysomnography/about/pac-20394877#:~:text=Polysomnography%2C%20also%20called%20a%20sleep,leg%20movements%20during%20the%20study
+3. https://sleepdata.org/datasets/shhs/pages/04-dataset-introduction.md
+4. https://github.com/raphaelvallat/yasa_classifier
+5. https://elifesciences.org/articles/70092
+6. https://github.com/cbrnr/sleepecg
 
 Vallat, Raphael, and Matthew P. Walker. “A Universal, Open-Source, High-Performance Tool for Automated Sleep Staging.” BioRxiv, Cold Spring Harbor Laboratory, 1 Jan. 2021, https://www.biorxiv.org/content/10.1101/2021.05.28.446165v1.full.
-
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/YilanG08/YilanG08.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
