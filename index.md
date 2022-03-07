@@ -2,11 +2,12 @@
 
 The project code can be found [here](https://github.com/chinkevin/DSC180_sleep_apnea).
 
-Obstructive sleep apnea (OSA), the more common form of sleep apnea, is a sleeping disorder where breathing stops and starts intermittently. OSA happens when muscles in the throat get relaxed, narrowing the airway and hampering breathing for 10 seconds or longer, causing blood oxygen concentration to decrease and a buildup of carbon dioxide. Such sudden drops in oxygen levels cause sudden increases in heart rate and blood pressure, resulting in repeated, transient strains on the cardiovascular system. OSA increases the risk of stroke and the risk of irregular heart rhythms or arrhythmias; both stroke and arrhythmias have the potential to cause sudden death. 
+In this project, we aim to explore sleep stage classification for individuals specifically with [sleep apnea](https://www.mayoclinic.org/diseases-conditions/sleep-apnea/symptoms-causes/syc-20377631). Current sleep stage scoring is done by hand which is somewhat subjective so human scorers don’t agree a lot of the time. Moreover, current automated sleep stage scoring models don't generalize well to patients with sleep apnea. 
 
-Sleeping is not uniform and consists of four stages: N1, N2, N3, and REM sleep. The analysis of sleep stages is essential for understanding and diagnosing sleep-related diseases, such as insomnia, narcolepsy, and sleep apnea.; however, there is not enough research on sleep stages and sleep stage classification for sleep apnea. The goal of our project is to identify and classify the sleep stage for people with sleep apnea and understand how it differs from the normal sleep stage.
+This work is important because sleep apnea can cause serious health issues for patients. It increases the risk of stroke, breathing problems, obesity, heart failure, and even sudden death. So the analysis of sleep data is essential for understanding and diagnosing sleep-related diseases in order to prevent life-changing health problems.
 
-This report aims to document scientific investigations we have done on EEG classification and exploratory data analysis (EDA) performed on sleep polysomnography data provided by the Sleep Heart Health Study PSG Database under the National Heart Lung & Blood Institute. The methods we have examined and plan to build our model on are YASA classifier and LGBM classifier models. The result section contains the EDA of some essential exploration of the dataset to understand its characteristics and patterns, cleaning the missing values and irregularities such as outliers to improve our results, visualizations representing the data, and some analysis.
+Our goal is to further explore the relationship between sleep stages and sleep apnea by building a sleep stage classifier that specifically includes ECG signals. We suspect that including ECG signals will improve the current models’ performance because it can identify obstructive sleep events, such as waking during sleep cycle, which individuals with sleep apnea often encounter.
+
 
 
 ### Data
@@ -33,6 +34,8 @@ To accord with the epoch period in our later model planning, EEG, ECG, and EOG d
 ### Reference
 
 Vallat, Raphael, and Matthew P. Walker. “A Universal, Open-Source, High-Performance Tool for Automated Sleep Staging.” BioRxiv, Cold Spring Harbor Laboratory, 1 Jan. 2021, https://www.biorxiv.org/content/10.1101/2021.05.28.446165v1.full.
+
+https://www.mayoclinic.org/diseases-conditions/sleep-apnea/symptoms-causes/syc-20377631
 
 
 ### Jekyll Themes
