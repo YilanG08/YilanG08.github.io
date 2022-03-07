@@ -8,8 +8,6 @@ This work is important because sleep apnea can cause serious health issues for p
 
 Our goal is to further explore the relationship between sleep stages and sleep apnea by building a sleep stage classifier that specifically includes ECG signals. We suspect that including ECG signals will improve the current models’ performance because it can identify obstructive sleep events, such as waking during sleep cycle, which individuals with sleep apnea often encounter.
 
-
-
 ## Our Data
 
 The data we have chosen to work with comes from the National Sleep Research Resource (NSRR). Specifically, we used the Sleep Heart Health Study (SHHS) which consists of two visits and the respective overnight [polysomnography](https://www.mayoclinic.org/tests-procedures/polysomnography/about/pac-20394877#:~:text=Polysomnography%2C%20also%20called%20a%20sleep,leg%20movements%20during%20the%20study) recordings. Since the second visit has less participants and was done more recently, to make sure we had a more reliable and complete dataset we continued with the second visit (SHHS 2). This visit consists of 2,651 subjects and their respective 9 hour recordings of EEG, EOG, EMG, and ECG signals in 30 second periods. 
@@ -21,8 +19,14 @@ Here is a snippet of a single participant’s signal recordings:
 
 ## Our Methods
 ### Feature Extract EEG, EMG, EOG
+In order to extract features from EEG, EMG, and EOG signals, we followed the preprocessing and feature extraction process found in the [Yasa Classifier](https://github.com/raphaelvallat/yasa_classifier). 
+
+To read more about the Yasa Classifier, click [here](yasa_classifier.md)
 
 ### Feature Extract ECG
+In order to extract features from ECG signals, we followed the preprocessing and feature extraction process found in [SleepECG](https://github.com/cbrnr/sleepecg). 
+
+To read more about SleepECG, click [here](sleep_ecg.md)
 
 ### LGBM Classifier
 
