@@ -28,7 +28,7 @@ In order to extract features from ECG signals, we followed the preprocessing and
 
 ## Models and Performance
 
-## Result
+## Results and Conclusion
 
 ## Reference
 
