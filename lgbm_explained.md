@@ -9,9 +9,10 @@ The LGBM algorithm is a fast, distributed, high performance gradient boosted fra
 4. Support of GPU learning
 5. Handle large-scale data
 
-## Cons
+### Cons
 1. Sensitive to overfitting
 2. Not recommended for small data sets
 
-## Tree Growth
-Most decision tree algorithms grow by level-wise. That is, they grow horizontally. However LGBM is unique because it grows leaf-wise or vertically. It will choose the leaf with the max delta loss to grow which can reduce more loss. The follow visual explains the growth: 
+### Tree Growth
+Most decision tree algorithms grow by level-wise. That is, they grow horizontally. However LGBM is unique because it grows leaf-wise or vertically. It will choose the leaf with the max delta loss to grow which can reduce more loss. The follow visual explains the growth:
+![visit2](images/data_snip.PNG)
