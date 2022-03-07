@@ -15,7 +15,7 @@ The data we have chosen to work with comes from the National Sleep Research Reso
 To learn more about the full dataset, check out this [link](https://sleepdata.org/datasets/shhs/pages/04-dataset-introduction.md).
 
 Here is a snippet of a single participant’s signal recordings:
-![visit2](images/visit2.png)
+![visit2](images/data_snip.png)
 
 ## Our Methods
 ### Feature Extract EEG, EMG, EOG and Demographics
