@@ -18,8 +18,8 @@ Here is a snippet of a single participant’s signal recordings:
 ![visit2](images/visit2.png)
 
 ## Our Methods
-### Feature Extract EEG, EMG, EOG
-In order to extract features from EEG, EMG, and EOG signals, we followed the preprocessing and feature extraction process found in the [Yasa Classifier](https://github.com/raphaelvallat/yasa_classifier). For a more in-depth explanation about the Yasa Classifier, [here](https://elifesciences.org/articles/70092) is a great article that thoroughly explains the software along with the testing, data, performance, advantages, limitations, and scientific methods.
+### Feature Extract EEG, EMG, EOG and Demographics
+In order to extract features from EEG, EMG, EOG signals and demographics, we followed the preprocessing and feature extraction process found in the [Yasa Classifier](https://github.com/raphaelvallat/yasa_classifier). For a more in-depth explanation about the Yasa Classifier, [here](https://elifesciences.org/articles/70092) is a great article that thoroughly explains the software along with the testing, data, performance, advantages, limitations, and scientific methods.
 
 ### Feature Extract ECG
 In order to extract features from ECG signals, we followed the preprocessing and feature extraction process found in [SleepECG](https://github.com/cbrnr/sleepecg). For a more in-depth explanation about SleepECG, click [here](sleep_ecg.md).
