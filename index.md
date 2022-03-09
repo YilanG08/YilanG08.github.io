@@ -32,7 +32,7 @@ The following is the results from our two models. The first model extracts featu
 
 ![Model Performance](images/result_table.PNG)
 
-<img src="images/without_ecg_fimp.png" width="500" height="500" />
+<img src="images/without_ecg_fimp.png" width="900" height="900" />
 
 ![Without ECG Importance](images/without_ecg_fimp.png) ![With ECG Importance](images/with_ecg_fimp.png) 
 
