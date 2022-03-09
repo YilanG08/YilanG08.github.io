@@ -32,6 +32,8 @@ The following is the results from our two models. The first model extracts featu
 
 ![Model Performance](images/result_table.PNG)
 
+![Without ECG Importance](images/without_ecg_fimp.png) ![With ECG Importance](images/with_ecg_fimp.png) 
+
 ## Results and Conclusion
 
 ## Reference
