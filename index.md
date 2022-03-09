@@ -22,7 +22,7 @@ Here is a snippet of a single participant’s signal recordings:
 In order to extract features from EEG, EMG, EOG signals and demographics, we followed the preprocessing and feature extraction process found in the [Yasa Classifier](https://github.com/raphaelvallat/yasa_classifier). For a more in-depth explanation about the Yasa Classifier, [here](https://elifesciences.org/articles/70092) is a great article that thoroughly explains the software along with the testing, data, performance, advantages, limitations, and scientific methods.
 
 ### Feature Extract ECG
-In order to extract features from ECG signals, we followed the preprocessing and feature extraction process found in [SleepECG](https://github.com/cbrnr/sleepecg). For a more in-depth explanation about SleepECG, check out their [Documentation Page](https://sleepecg.readthedocs.io/en/stable/heartbeat_detection.html).
+In order to extract features from ECG signals, we followed the preprocessing and feature extraction process found in [SleepECG](https://github.com/cbrnr/sleepecg). For a more in-depth explanation about SleepECG, check out their [Documentation](https://sleepecg.readthedocs.io/en/stable/heartbeat_detection.html) page.
 
 ### LightGBM Classifier
 We then passed all of our extracted features into a Light Gradient Boosted Machine to classify each epoch as one of the following stages: W (wake), R (REM), N1, N2, N3. To learn more about the LGBM algorithm, see our [LightGBM Explained](lgbm_explained.md) page
