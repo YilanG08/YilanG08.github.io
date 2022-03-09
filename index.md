@@ -34,7 +34,8 @@ The following is the results from our two models. The first model extracts featu
 
 <img src="images/without_ecg_fimp.png" width="900" height="600" />
 <img src="images/with_ecg_fimp.png" width="900" height="600" />
-
+<div align= "left">
+  
 ## Results and Conclusion
 
 To our surprise, the inclusion of features extracted from ECG data did not improve the model's performance. The model with ECG features performed roughly 5-6% worse in training and validation accuracy compared to the original model without ECG features. Furthermore, the first graph shows the feature importance from the first model without ECG signals. It is clear that the most important features come from EOG and EEG signals. The second graph shows the feature imortace from the second model which includes ECG signals. Although features extracted from ECG data are in the top 3 most important here, its importance is relatively low compared to the first two features which come from EOG and EMG data. This implies that the inclusion of ECG data did not help the model classify sleep stages for patients with sleep apnea.
