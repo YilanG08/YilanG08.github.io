@@ -51,5 +51,3 @@ Even though our findings did not match our hypothesis, our work was still import
 5. https://elifesciences.org/articles/70092
 6. https://github.com/cbrnr/sleepecg
 7. https://sleepecg.readthedocs.io/en/stable/heartbeat_detection.html
-
-Vallat, Raphael, and Matthew P. Walker. “A Universal, Open-Source, High-Performance Tool for Automated Sleep Staging.” BioRxiv, Cold Spring Harbor Laboratory, 1 Jan. 2021, https://www.biorxiv.org/content/10.1101/2021.05.28.446165v1.full.
