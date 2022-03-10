@@ -31,6 +31,7 @@ We then passed all of our extracted features into a Light Gradient Boosted Machi
 
 The following is the results from our two models. The first model extracts features from EEG, EMG, EOG signals and demographics of the patient. The second model uses all of the features from the first model plus extracted features from ECG signals.
 ![Table](images/result_table.PNG)
+![Feature Importance](images/FIMP.PNG)
 ![Without ECG Fimp](images/without_ecg_fimp.png)
 ![With ECG Fimp](images/with_ecg_fimp.png)
   
