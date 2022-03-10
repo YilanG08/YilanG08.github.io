@@ -38,14 +38,4 @@ The following is the results from our two models. The first model extracts featu
 
 To our surprise, the inclusion of features extracted from ECG data did not improve the model's performance. The model with ECG features performed roughly 5-6% worse in training and validation accuracy compared to the original model without ECG features. Furthermore, the first graph shows the feature importance from the first model without ECG signals. It is clear that the most important features come from EOG and EEG signals. The second graph shows the feature importace from the second model which includes ECG signals. Although features extracted from ECG data are in the top 3 most important here, its importance is relatively low compared to the first two features which come from EOG and EMG data. This implies that the inclusion of ECG data did not help the model classify sleep stages for patients with sleep apnea.
 
-Even though our findings did not match our hypothesis, our work was still important for future research within the area of sleep analysis or sleep stage classifying. Our findings may help direct others to exclude ECG signals in their models or dive deeper into the reasoning behind why ECG signals may not work so well. 
-
-## Reference
-
-1. https://www.mayoclinic.org/diseases-conditions/sleep-apnea/symptoms-causes/syc-20377631
-2. https://www.mayoclinic.org/tests-procedures/polysomnography/about/pac-20394877#:~:text=Polysomnography%2C%20also%20called%20a%20sleep,leg%20movements%20during%20the%20study
-3. https://sleepdata.org/datasets/shhs/pages/04-dataset-introduction.md
-4. https://github.com/raphaelvallat/yasa_classifier
-5. https://elifesciences.org/articles/70092
-6. https://github.com/cbrnr/sleepecg
-7. https://sleepecg.readthedocs.io/en/stable/heartbeat_detection.html
+Even though our findings did not match our hypothesis, our work was still important for future research within the area of sleep analysis or sleep stage classifying. Our findings may help direct others to exclude ECG signals in their models or dive deeper into the reasoning behind why ECG signals may not work so well.
