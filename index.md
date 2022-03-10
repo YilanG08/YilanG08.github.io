@@ -34,7 +34,7 @@ The following is the results from our two models. The first model extracts featu
 
 <img src="images/without_ecg_fimp.png" width="900" height="600" />
 <img src="images/with_ecg_fimp.png" width="900" height="600" />
-<div align= "left">
+</div align= "left">
   
 ## Results and Conclusion
 
