@@ -28,11 +28,11 @@ In order to extract features from ECG signals, we followed the preprocessing and
 We then passed all of our extracted features into a Light Gradient Boosted Machine to classify each epoch as one of the following stages: W (wake), R (REM), N1, N2, N3. To learn more about the LGBM algorithm, see our [LightGBM Explained](lgbm_explained.md) page
 
 ## Models and Performance
+
 The following is the results from our two models. The first model extracts features from EEG, EMG, EOG signals and demographics of the patient. The second model uses all of the features from the first model plus extracted features from ECG signals.
-<html>
-<div align= "center"><img src="images/result_table.PNG"><img src="images/without_ecg_fimp.png" width="900" height="600"><img src="images/with_ecg_fimp.png" width="900" height="600">
-</div align= "left">
-</html>
+![Table](images/result_table.PNG)
+![Without ECG Fimp](images/without_ecg_fimp.png)
+![With ECG Fimp](images/with_ecg_fimp.png)
   
 ## Results and Conclusion
 
